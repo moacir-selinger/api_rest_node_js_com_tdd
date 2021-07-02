@@ -1,0 +1,11 @@
+{
+    "env": {
+        "jest": true
+    },
+    "extends": "airbnb-base",
+    "rules": {
+        "no-console": "off",
+        "arrow-body-style": "off",
+        "padded-blocks": "off"
+    }
+}
