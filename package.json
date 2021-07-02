@@ -1,0 +1,33 @@
+{
+  "name": "curso_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "lint": "eslint src/** test/** --fix",
+    "format": "prettier-eslint 'server/**/*.{js,json}' --write",
+    "test": "node_modules/.bin/jest test/**",
+    "secure-mode": "jest --watchAll --verbose=true",
+    "db:migrate": "knex migrate:latest --env test",
+    "db:roolback": "knex migrate:rollback --env test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "knex-logger": "^0.1.0",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.0.4",
+    "supertest": "^6.1.3"
+  }
+}
